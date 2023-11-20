@@ -1,0 +1,11 @@
+-Ionic generate (te ofrece los diferentes componentes que puedes crear)
+
+-Ionic diferencia entre pagina(pantalla completa) y componente(parte o toda la pantalla)
+
+-Generar pagina de Inicio:
+    ionic generate page paginas/inicio --spec=false (Crea una pagina dentro de la carpeta pagina sin el modulo de pruebas spec)
+        En app-routing.module.ts modificamos la pagina de inicio:
+            redirectTo: 'inicio',
+
+Añadimos un modulo en la carpeta componentes:
+    ionic g module componentes
