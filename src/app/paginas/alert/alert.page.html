@@ -2,6 +2,12 @@
   [titulo] = "'alert'"
   [color]="'secondary'">
 </app-cabecera>
-<ion-content>
- 
+<ion-content class="ion-padding">
+ <ion-button (click)="mostrarAlert()" expand="block">
+  Mostrar Alerta
+ </ion-button>
+
+ <ion-button (click)="mostrarAlertaDatos()" expand="block" color="warning">
+  Meter datos
+</ion-button>
 </ion-content>

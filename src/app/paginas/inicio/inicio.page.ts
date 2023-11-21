@@ -10,7 +10,7 @@ export class InicioPage implements OnInit {
 
   public componentes:Componente[] = [
     {
-      nombre:'action-sheet',
+      nombre:'action-sheet y toast',
       ruta:'action-sheet',
       color:'primary',
       icono:'add'
