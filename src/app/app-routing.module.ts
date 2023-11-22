@@ -4,7 +4,7 @@ import { ActionSheetPageModule } from './paginas/action-sheet/action-sheet.modul
 import { AlertPageModule } from './paginas/alert/alert.module';
 import { CardPageModule } from './paginas/card/card.module';
 import { InicioPageModule } from './paginas/inicio/inicio.module';
-
+import { InfiniteScrollPageModule } from './paginas/infinite-scroll/infinite-scroll.module';
 const rutas: Routes = [
   {
     path: '',
@@ -27,12 +27,17 @@ const rutas: Routes = [
     path: 'card',
     loadChildren: () => import('./paginas/card/card.module').then( m => m.CardPageModule)
   },
+  {
+    path: 'infinite-scroll',
+    loadChildren: () => import('./paginas/infinite-scroll/infinite-scroll.module').then( m => m.InfiniteScrollPageModule)
+  }
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(rutas, { preloadingStrategy: PreloadAllModules })
   ],
-  exports: [RouterModule]
+  exports: [RouterModule,
+    ]
 })
 export class AppRoutingModule { }

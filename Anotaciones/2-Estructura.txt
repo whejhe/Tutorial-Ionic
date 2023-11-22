@@ -1,0 +1,67 @@
+Tutorial-Ionic
+    |-- .angular/
+    |-- .vscode/
+    |-- node_modules/
+    |-- src/
+    |   |-- app/
+    |   |   |-- componentes/
+    |   |   |   |-- cabecera/
+    |   |   |   |   |-- cabecera.component.html
+    |   |   |   |   |-- cabecera.component.scss
+    |   |   |   |   |-- cabecera.component.ts
+    |   |   |   |-- componentes.module.ts
+    |   |   |-- interfaces/
+    |   |   |   |-- componente.ts
+    |   |   |-- paginas/
+    |   |   |   |-- action-sheet/
+    |   |   |   |   |-- action-sheet-routing.module.ts
+    |   |   |   |   |-- action-sheet.module.ts
+    |   |   |   |   |-- action-sheet.page.html
+    |   |   |   |   |-- action-sheet.page.scss
+    |   |   |   |   |-- action-sheet.page.ts
+    |   |   |   |-- alert/
+    |   |   |   |   |-- alert-routing.module.ts
+    |   |   |   |   |-- alert.module.ts
+    |   |   |   |   |-- alert.page.html
+    |   |   |   |   |-- alert.page.scss
+    |   |   |   |   |-- alert.page.ts
+    |   |   |   |-- card/
+    |   |   |   |   |-- card-routing.module.ts
+    |   |   |   |   |-- card.module.ts
+    |   |   |   |   |-- card.page.html
+    |   |   |   |   |-- card.page.scss
+    |   |   |   |   |-- card.page.ts
+    |   |   |   |-- inicio/
+    |   |   |   |   |-- inicio-routing.module.ts
+    |   |   |   |   |-- inicio.module.ts
+    |   |   |   |   |-- inicio.page.html
+    |   |   |   |   |-- inicio.page.scss
+    |   |   |   |   |-- inicio.page.ts
+    |   |   |-- app-routing.module.ts
+    |   |   |-- app.component.html
+    |   |   |-- app.component.scss
+    |   |   |-- app.component.spec.ts
+    |   |   |-- app.component.ts
+    |   |   |-- app.module.ts
+    |   |-- assets/
+    |   |-- environments/
+    |   |-- theme/
+    |   |-- global.css
+    |   |-- index.html
+    |   |-- main.js
+    |   |-- polyfills.ts
+    |   |-- test.ts
+    |   |-- zone-flags.ts
+    |-- .browserslistrc
+    |-- .editorconfig
+    |-- .eslintrc.json
+    |-- .gitignore
+    |-- angular.json
+    |-- capacitor.config.json
+    |-- ionic.config.json
+    |-- karma.conf.js
+    |-- package-lock.json
+    |-- package.json
+    |-- tsconfig.app.json
+    |-- tsconfig.json
+    |-- tsconfig.spec.json    

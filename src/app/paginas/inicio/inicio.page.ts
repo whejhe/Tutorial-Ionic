@@ -26,6 +26,12 @@ export class InicioPage implements OnInit {
       ruta:'card',
       color:'tertiary',
       icono:'airplane'
+    },
+    {
+      nombre:'infinite-scroll',
+      ruta:'infinite-scroll',
+      color:'success',
+      icono:'alarm'
     }
   ];
   constructor() { }

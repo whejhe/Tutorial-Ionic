@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { ActionSheetController, ToastController } from '@ionic/angular';
 
@@ -9,6 +10,7 @@ import { ActionSheetController, ToastController } from '@ionic/angular';
 export class ActionSheetPage implements OnInit {
 
   constructor(
+    private router:Router,
     private _actionSheetController: ActionSheetController,
     private _toastController:ToastController
     ) { }
