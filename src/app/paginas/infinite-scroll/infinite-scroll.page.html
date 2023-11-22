@@ -4,8 +4,8 @@
 ></app-cabecera>
 <ion-content class="ion-padding">
   <ion-list>
-    <ion-item *ngfor="let item of datos; let i = index">
-      <ion-label>Elemento {{i+1}}</ion-label>
+    <ion-item *ngfor="let item of personajes; let i = index">
+      <ion-label>Elemento {{item.name}}</ion-label>
     </ion-item>
   </ion-list>
   <ion-infinite-scroll
