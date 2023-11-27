@@ -17,6 +17,7 @@ import { ComponentesModule } from 'src/app/componentes/componentes.module';
     InfiniteScrollPageRoutingModule,
     ComponentesModule
   ],
+  exports: [InfiniteScrollPage],
   declarations: [InfiniteScrollPage]
 })
 export class InfiniteScrollPageModule {}

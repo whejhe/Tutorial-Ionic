@@ -5,11 +5,10 @@
 <ion-content class="ion-padding">
   <ion-list>
     <ion-item *ngfor="let item of personajes; let i = index">
-      <ion-label>Elemento {{item.name}}</ion-label>
+      <ion-label>{{i+1}} {{item.name}}</ion-label>
     </ion-item>
   </ion-list>
   <ion-infinite-scroll
-    #infiniteScroll
     threshold="100px"
     (ionInfinite)="loadData()"
   >

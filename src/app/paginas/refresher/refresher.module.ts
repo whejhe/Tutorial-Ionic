@@ -17,6 +17,7 @@ import { ComponentesModule } from "../../componentes/componentes.module";
         IonicModule,
         RefresherPageRoutingModule,
         ComponentesModule,
-    ]
+    ],
+    exports: [RefresherPage],
 })
 export class RefresherPageModule {}
