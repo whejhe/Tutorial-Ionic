@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Componente } from '../../interfaces/componente'
+import { Componente } from '../../interfaces/componente';
+import { ComponentesService } from '../../servicios/componentes.service';
 
 @Component({
   selector: 'app-inicio',
@@ -42,8 +43,12 @@ export class InicioPage implements OnInit {
   ];
   constructor() { }
 
-ngOnInit(): void {
-  // Function body goes here
+  async ngOnInit(): Promise<void> {
+  try{
+    this.componentes = await this.ComponentesService.getPersonajes();
+  }catch(err:any){
+    console.log('err_message',err.message);
+  }
 }
 
 }
