@@ -1,0 +1,25 @@
+<app-cabecera
+[titulo]="'Refresher'"
+[color] = "'dark'">
+</app-cabecera>
+
+<ion-content class="ion-padding">
+  <ion-refresher #mirefresh
+  slot="fixed"
+  (ionRefresh)="refresca()"
+  >
+    <ion-refresher-content
+    refreshingSpinner="circular"
+    refreshingText="Cargando..."
+    >
+    </ion-refresher-content>  
+  </ion-refresher>
+
+  <ion-list>
+    <ion-item *ngFor="let item of personajes">
+      <ion-label>
+        <h2>{{ item.name }}</h2>
+        </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

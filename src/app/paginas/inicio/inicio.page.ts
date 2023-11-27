@@ -11,27 +11,33 @@ export class InicioPage implements OnInit {
   public componentes:Componente[] = [
     {
       nombre:'action-sheet y toast',
-      ruta:'action-sheet',
+      ruta:'/action-sheet',
       color:'primary',
       icono:'add'
     },
     {
       nombre:'alert',
-      ruta:'alert',
+      ruta:'/alert',
       color:'secondary',
       icono:'add-circle'
     },
     {
       nombre:'card',
-      ruta:'card',
+      ruta:'/card',
       color:'tertiary',
       icono:'airplane'
     },
     {
       nombre:'infinite-scroll',
-      ruta:'infinite-scroll',
+      ruta:'/infinite-scroll',
       color:'success',
       icono:'alarm'
+    },
+    {
+      nombre:'refresher',
+      ruta:'/refresher',
+      color:'warning',
+      icono:'american-football'
     }
   ];
   constructor() { }

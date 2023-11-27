@@ -11,6 +11,7 @@ import { AlertPageModule } from './paginas/alert/alert.module';
 import { CardPageModule } from './paginas/card/card.module';
 import { InicioPageModule } from './paginas/inicio/inicio.module';
 import { InfiniteScrollPageModule } from './paginas/infinite-scroll/infinite-scroll.module';
+//import { StarWarsService } from './paginas/refresher/refresher.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,7 +23,14 @@ import { InfiniteScrollPageModule } from './paginas/infinite-scroll/infinite-scr
     AlertPageModule,
     CardPageModule,
     InicioPageModule,
-    InfiniteScrollPageModule
+    InfiniteScrollPageModule,
+  ],
+  exports: [
+    ActionSheetPageModule,
+    AlertPageModule,
+    CardPageModule,
+    InicioPageModule,
+    InfiniteScrollPageModule,
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
