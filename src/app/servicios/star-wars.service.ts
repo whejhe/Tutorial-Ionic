@@ -10,11 +10,14 @@ import { environment } from 'src/environments/environment';
 export class StarWarsService {
 
     constructor(private _http: HttpClient) { }
+    
     public url: string = environment.urlDatos;
     public numPagina:number =1;
     getPersonajes() {
         return new Promise<Datos>((resolve, reject) => {
-            this._http.get<Datos>(`$(this.url)/?page=$(this.numPagina)`).subscribe({
+            "https://swapi.dev/api/people/?page=2"
+            let url:string = 'https://swapi.dev/api/people';
+            this._http.get<Datos>(`${this.url}/?page=$`).subscribe({
                 next: (datos) => {
                     resolve(datos);
                     this.numPagina++;

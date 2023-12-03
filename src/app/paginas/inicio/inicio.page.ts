@@ -41,6 +41,7 @@ export class InicioPage implements OnInit {
       icono:'american-football'
     }
   ];
+  ComponentesService: any;
   constructor() { }
 
   async ngOnInit(): Promise<void> {

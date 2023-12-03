@@ -9,11 +9,12 @@
     </ion-item>
   </ion-list>
   <ion-infinite-scroll
+    #infiniteScroll
     threshold="100px"
     (ionInfinite)="loadData()"
   >
   <ion-infinite-scroll-content
-    loadingSpinner="bubbles"
+    loadingSpinner="circular"
     loadingText="Cargando..."
   ></ion-infinite-scroll-content>
 </ion-infinite-scroll>
